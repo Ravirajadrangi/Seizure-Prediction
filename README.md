@@ -6,7 +6,7 @@ Code and documentation for my solution (51th place) for the Kaggle Melbourne Uni
 https://www.kaggle.com/c/melbourne-university-seizure-prediction
 
 **Authors**:
-* [Shlomo Kashani](http://www.deep-ml.com)
+* [Shlomo K](http://www.deep-ml.com)
 
 **Contents** :
 
