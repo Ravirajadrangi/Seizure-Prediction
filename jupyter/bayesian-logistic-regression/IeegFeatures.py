@@ -803,8 +803,8 @@ class IeegFeatures(object):
 
     # def singlePatientLRModel(self, X_df_train, glm_factor=None, withGrid=True):
     #     X_df_train_SINGLE = X_df_train.copy(deep=True)
-    #     answers_1_SINGLE = list(X_df_train_SINGLE[singleResponseVariable].values)
-    #     X_df_train_SINGLE = X_df_train_SINGLE.drop(singleResponseVariable, axis=1)
+    #     answers_1_SINGLE = list(X_df_train_SINGLE[TARGET_VAR].values)
+    #     X_df_train_SINGLE = X_df_train_SINGLE.drop(TARGET_VAR, axis=1)
     #
     #     if glm_factor is not None:
     #         print 'Limit on the number of features'
@@ -860,8 +860,8 @@ class IeegFeatures(object):
     #     para_search = grid_search.GridSearchCV(lg, para_grid, cv=10, verbose=False, scoring='roc_auc')
     #
     #     X_df_train_SINGLE = X_df_train.copy(deep=True)
-    #     answers_1_SINGLE = list(X_df_train_SINGLE[singleResponseVariable].values)
-    #     X_df_train_SINGLE = X_df_train_SINGLE.drop(singleResponseVariable, axis=1)
+    #     answers_1_SINGLE = list(X_df_train_SINGLE[TARGET_VAR].values)
+    #     X_df_train_SINGLE = X_df_train_SINGLE.drop(TARGET_VAR, axis=1)
     #
     #     if glm_factor is not None:
     #         X_df_train_SINGLE=X_df_train_SINGLE[glm_factor]
@@ -884,8 +884,8 @@ class IeegFeatures(object):
     #                                    silent=1, subsample=0.9)
     #
     #     X_df_train_SINGLE = X_df_train_1.copy(deep=True)
-    #     answers_1_SINGLE = list(X_df_train_SINGLE[singleResponseVariable].values)
-    #     X_df_train_SINGLE = X_df_train_SINGLE.drop(singleResponseVariable, axis=1)
+    #     answers_1_SINGLE = list(X_df_train_SINGLE[TARGET_VAR].values)
+    #     X_df_train_SINGLE = X_df_train_SINGLE.drop(TARGET_VAR, axis=1)
     #
     #     print 'Running:' + str(algo_xgbm1) + 'shape:' + str(X_df_train_SINGLE.shape)
     #     X_df_train_SINGLE = X_df_train_SINGLE.apply(lambda x: pandas.to_numeric(x, errors='ignore'))
